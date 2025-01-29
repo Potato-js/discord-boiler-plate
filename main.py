@@ -17,4 +17,5 @@ async def ping(ctx):
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-client.run(TOKEN)
+if __name__ == "__main__":
+    client.run(TOKEN)
